@@ -627,6 +627,7 @@
       self._onseek = o.onseek ? [{fn: o.onseek}] : [];
       self._onunlock = o.onunlock ? [{fn: o.onunlock}] : [];
       self._onresume = [];
+      self._onresumeerror = o.onresumeerror ? [{fn: o.onresumeerror}] : [];
 
       // Web Audio or HTML5 Audio?
       self._webAudio = Howler.usingWebAudio && !self._html5;
